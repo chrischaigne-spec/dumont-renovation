@@ -167,18 +167,21 @@ export const testimonials = [
     location: 'Brignais',
     text: 'Rénovation complète de notre maison — du sol au plafond. Travail soigné, équipe ponctuelle, zéro mauvaise surprise sur la facture.',
     rating: 5,
+    image: '/images/temoignage-marc-sophie.webp',
   },
   {
     name: 'Jean-Pierre M.',
     location: 'Chaponost',
     text: "Extension de 30m² réalisée en 3 mois, dans le budget annoncé. Philippe et son équipe sont des pros. Communication claire du début à la fin.",
     rating: 5,
+    image: '/images/temoignage-jean-pierre.webp',
   },
   {
     name: 'Catherine L.',
     location: 'Oullins',
     text: "Salle de bain refaite à neuf en deux semaines. Le résultat est magnifique et la douche italienne est un vrai bonheur au quotidien.",
     rating: 5,
+    image: '/images/temoignage-catherine.webp',
   },
 ]
 

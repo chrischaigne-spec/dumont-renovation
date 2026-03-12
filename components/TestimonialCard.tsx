@@ -17,12 +17,14 @@ export default function TestimonialCard({
   location,
   text,
   rating,
+  image,
   delay = 0,
 }: {
   name: string
   location: string
   text: string
   rating: number
+  image?: string
   delay?: number
 }) {
   return (
@@ -52,11 +54,15 @@ export default function TestimonialCard({
 
         {/* Author */}
         <div className="flex items-center gap-3 pt-5 border-t border-border">
-          <div className="w-10 h-10 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full flex items-center justify-center">
-            <span className="text-primary font-bold text-sm">
-              {name.charAt(0)}
-            </span>
-          </div>
+          {image ? (
+            <img src={image} alt={name} className="w-10 h-10 rounded-full object-cover" />
+          ) : (
+            <div className="w-10 h-10 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full flex items-center justify-center">
+              <span className="text-primary font-bold text-sm">
+                {name.charAt(0)}
+              </span>
+            </div>
+          )}
           <div>
             <p className="font-semibold text-dark text-sm">{name}</p>
             <p className="text-text-light text-xs flex items-center gap-1">

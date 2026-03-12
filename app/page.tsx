@@ -118,6 +118,7 @@ export default function Home() {
                 location={testimonial.location}
                 text={testimonial.text}
                 rating={testimonial.rating}
+                image={testimonial.image}
                 delay={i * 0.1}
               />
             ))}
