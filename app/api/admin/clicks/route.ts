@@ -26,6 +26,7 @@ export async function GET(request: NextRequest) {
           prospect,
           total: entries.length,
           lastClick: entries[0]?.t || null,
+          source: entries[0]?.src || 'dumont',
           clicks: entries,
         };
       })

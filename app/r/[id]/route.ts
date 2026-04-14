@@ -13,6 +13,7 @@ export async function GET(
     try {
       await redis.lpush(`clicks:${id}`, JSON.stringify({
         t: new Date().toISOString(),
+        src: 'dumont',
       }));
       await redis.sadd('prospects', id);
     } catch (e) {
